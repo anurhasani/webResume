@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+
+  background-image: url("panah.JPEG");
+  height: 90%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+  
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+}
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width:100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.header{
+
+background-image: url(abstract.JPG);
+padding: 50px;
+margin-bottom: 10px;
+text-align: center;
+color: white;
+
+}
+
+
+</style>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+
+
+
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+
+  <h1 style="font-size:50px">I am Nur Hasani</h1>
+  <h2>Barchelor In Software Engineering (Education Software) with Honors</h2>
+</div>
+ 
+ <div style = "background-color: grey">
+ 
+ </div>
+
+<div class="topnav">
+ 
+  <div class="topnav-centered">
+    <a class="active" href="index.html"  title="home" >Home</a>
+  </div>
+  
+  <div class="topnav-leftt">
+  <a href="profile.html"  title="my profile">Profile</a>
+  <a href="resume.JPG" download= "nurhasani" title="curricular vitae" target="_blank"> Download CV</a>
+  </div>
+
+  <div class="topnav-right">
+    <a href="myphoto.html"  title="my photo">My Photo</a>
+    <a href="contact.html" title="contact">Contact</a>
+  </div>
+  
+</div>
+
+<div class="header" padding >
+
+<h1>You can leave your comment below. Nur Hasani would love to hear that.</h1>
+
+</div>
+
+<div class="container">
+  <form form name="myForm" action="demo_form.asp"
+onsubmit="return validateForm()" method="post">
+
+Name: <input type="name" name="fname"> <br> <br>
+
+
+Email: <input type="email" name="email"> <br><br>
+
+
+
+Comment: <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+	
+  </form>
+</div>
+
+</body>
+</html>

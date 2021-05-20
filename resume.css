@@ -1,0 +1,244 @@
+
+
+
+body
+{background-image : url(bgweb1.jpg);
+max-width: auto;
+
+
+
+}
+
+header{
+	
+	
+	margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
+	
+	background-color: darkcyan;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+h3 {font-family: Georgia, "Times New Roman", Times, serif;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*   unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; 
+}
+
+/* Left and right column */
+.column.side {
+	
+    width: 23%;
+	height: 350px; 
+    	margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 150px;
+}
+
+/* Middle column */
+.column.middle {
+    width: 57%;
+	height: 350px; 
+    	margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-left: 5px;
+	
+	
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+	
+	
+	
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+
+  background-image: url("panah.JPEG");
+  height: 90%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+  
+  
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+}
+
+
+
+
+
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* untuk column */
+.column {
+	background-color: lightblue;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 250px; 
+}
+
+
+.column2 {
+	background-color: lightblue;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 350px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
